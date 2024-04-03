@@ -35,10 +35,10 @@ function Category({ onUpdateProducts }) {
 				) : (
 					<ul className="nav prod-cat">
 						<li key="A">
-								<a href="/#" onClick={(e) => handleClick(e, 0)}>
-									<i className="fa fa-angle-right"></i> All
-								</a>
-							</li>
+							<a href="/#" onClick={(e) => handleClick(e, 0)}>
+								<i className="fa fa-angle-right"></i> All
+							</a>
+						</li>
 						{categories.map((category, index) => (
 							<li key={index}>
 								<a href="/#" onClick={(e) => handleClick(e, category.id)}>

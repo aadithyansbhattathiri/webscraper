@@ -18,7 +18,6 @@ function TopBar({ onUpdateCategory, onUpdateProductsList }) {
 		provider.post("/api/products", { data })
 			.then((response) => {
 				resetForm();
-				console.log(response);
 				if (response.data.message === 'success') {
 					setMessage('Product successfully Imported');
 					setshowSuccessAlert(true);
